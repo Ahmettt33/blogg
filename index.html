@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmet Kömürcü - Kişisel Web Sitesi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/feather-icons/dist/feather.css" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <div class="flex-col min-h-screen">
+        <!-- Header -->
+        <header class="header bg-primary text-white sticky">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="text-2xl font-bold">Ahmet Kömürcü</h1>
+                    <p class="text-blue-100 mt-1">Öğrenci | Gelecek Yazılımcı</p>
+                </div>
+
+                <nav class="desktop-nav">
+                    <a href="#hakkimda" class="nav-link">Hakkımda</a>
+                    <a href="#egitim" class="nav-link">Eğitim</a>
+                    <a href="#beceriler" class="nav-link">Beceriler</a>
+                    <a href="#hedefler" class="nav-link">Hedefler</a>
+                    <a href="#iletisim" class="nav-link">İletişim</a>
+                </nav>
+
+                <button class="mobile-menu-button" aria-label="Menü">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Menu Sheet -->
+        <div class="mobile-menu-sheet">
+            <div class="sheet-content">
+                <nav class="mobile-nav">
+                    <a href="#hakkimda" class="nav-link">Hakkımda</a>
+                    <a href="#egitim" class="nav-link">Eğitim</a>
+                    <a href="#beceriler" class="nav-link">Beceriler</a>
+                    <a href="#hedefler" class="nav-link">Hedefler</a>
+                    <a href="#iletisim" class="nav-link">İletişim</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-4 py-8 flex-grow">
+            <!-- Hero Section -->
+            <section class="hero-section" style="align-items: center; text-align: center;">
+                <div class="hero-content" style="width: 100%;">
+                    <h2 class="text-3xl font-bold text-primary mb-4">Merhaba, Ben Ahmet!</h2>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Mersin doğumlu bir öğrenciyim. Teknoloji ve bilgisayar dünyasına ilgi duyuyorum ve geleceğin yazılım geliştiricisi olmayı hedefliyorum.
+                    </p>
+                    <a href="#iletisim" class="button bg-primary hover-bg-secondary text-white font-medium">İletişime Geç</a>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="hakkimda" class="section bg-white rounded-xl shadow-md p-6">
+                <h2 class="section-title">Hakkımda</h2>
+                <div class="text-lg">
+                    <p class="mb-4">
+                        6 Haziran 2010 tarihinde Mersin'de dünyaya geldim. Eğitim hayatıma Evliya Çelebi Turizm ve Mesleki ve Teknik Anadolu Lisesi'nde devam ediyorum.
+                    </p>
+                    <p>
+                        Boş zamanlarımda teknoloji dünyasındaki gelişmeleri takip etmeyi seviyorum ve gelecekte kendime yazılım alanında sağlam bir kariyer inşa etmek istiyorum.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="egitim" class="section bg-white rounded-xl shadow-md p-6">
+                <h2 class="section-title">Eğitim</h2>
+                <div class="education-card">
+                    <h3 class="text-xl font-semibold">Evliya Çelebi Turizm ve Mesleki ve Teknik Anadolu Lisesi</h3>
+                    <p class="text-gray-700 mt-2">Öğrenci</p>
+                    <p class="text-gray-600 italic">2023 - Devam Ediyor</p>
+                    <div class="mt-4">
+                        <p>Mesleki eğitimim kapsamında hem turizm sektörüne yönelik beceriler hem de temel teknik bilgiler ediniyorum.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="beceriler" class="section bg-white rounded-xl shadow-md p-6">
+                <h2 class="section-title">Becerilerim</h2>
+                
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4">Dil Becerileri</h3>
+                    <div class="language-grid">
+                        <div class="language-card">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="font-medium">Türkçe</h4>
+                                <span class="text-sm text-gray-500">Anadil</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="language-card">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="font-medium">İngilizce</h4>
+                                <span class="text-sm text-gray-500">A2 Seviyesi</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Diğer Beceriler</h3>
+                    <div class="badge-container">
+                        <span class="badge">Temel Bilgisayar Kullanımı</span>
+                        <span class="badge">Sosyal Medya</span>
+                        <span class="badge">İletişim</span>
+                        <span class="badge">Ekip Çalışması</span>
+                        <span class="badge">Temel Yazılım Bilgisi</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Goals Section -->
+            <section id="hedefler" class="section bg-white rounded-xl shadow-md p-6">
+                <h2 class="section-title">Kariyer Hedeflerim</h2>
+                <div class="goals-container">
+                    <div class="goal-item">
+                        <div class="goal-icon">
+                            <i data-feather="target" class="text-primary"></i>
+                        </div>
+                        <div class="goal-content">
+                            <h3 class="text-xl font-semibold">Yazılım Geliştirme</h3>
+                            <p class="mt-2">Gelecekte kendime yazılım alanında bir kariyer hedefi çizmek istiyorum. Bu doğrultuda gerekli eğitimleri almayı ve becerilerimi geliştirmeyi planlıyorum.</p>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-icon">
+                            <i data-feather="award" class="text-primary"></i>
+                        </div>
+                        <div class="goal-content">
+                            <h3 class="text-xl font-semibold">Eğitim</h3>
+                            <p class="mt-2">Lise eğitimimden sonra üniversitede bilgisayar mühendisliği veya yazılım mühendisliği bölümünde okumayı hedefliyorum.</p>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-icon">
+                            <i data-feather="laptop" class="text-primary"></i>
+                        </div>
+                        <div class="goal-content">
+                            <h3 class="text-xl font-semibold">Teknik Beceriler</h3>
+                            <p class="mt-2">Temel yazılım bilgisine sahibim ve programlama dillerini öğrenmek ve yazılım geliştirme alanında kendimi geliştirmek için sürekli çalışmalar yapıyorum.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Contact Section -->
+        <section id="iletisim" class="bg-dark text-white py-8">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl font-bold mb-6 text-center">İletişim Bilgilerim</h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i data-feather="mail" class="text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">E-posta</h3>
+                        <a href="mailto:akomurcu.014@gmail.com" class="contact-link">akomurcu.014@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i data-feather="phone" class="text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Telefon</h3>
+                        <a href="tel:+905400606010" class="contact-link">05400606010</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i data-feather="instagram" class="text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Instagram</h3>
+                        <a href="https://instagram.com/ahmet.33i" target="_blank" class="contact-link">@ahmet.33i</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-primary text-white py-4 text-center">
+            <div class="container">
+            </div>
+        </footer>
+    </div>
+
+    <!-- Toast notification container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
